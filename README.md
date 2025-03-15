@@ -1,5 +1,7 @@
 # Transportation & Logistics Tracking
 
+![](hero.jpg)
+
 ## 1. Introduction
 In today's fast-paced supply chain industry, optimizing shipment efficiency, reducing delivery times, and enhancing operational visibility are critical for success. This project analyzes real-world transportation and logistics data to derive actionable insights that improve shipment operations and reduce delays.
 
@@ -31,6 +33,10 @@ The dataset used in this project consists of shipment records, GPS tracking data
 - Delay Status (On Time, Delayed, Early)
 - Supplier & Customer Information
 - Shipment Material Type
+
+The Dataset Provide by **FP20 Analytics** 
+
+More Information About This Challenge: [FP20 Analytics challenge 23](https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/fp20-analytics-february-2025)
 
 ## 5. Data Transformation
 Data preprocessing involved:
@@ -75,7 +81,6 @@ The data structure consists of **Primary Data** as the main fact table that reco
 - In addition, **Order Shipment Table** is used as the basis for building the `CONCEPT` of **Shipment Tracking**, which enables in-depth analysis of the status of shipment journeys without any direct relationship between tables.
 
   - Create `Shipment Status` Column on a Fact Table `Primary Data`.
-
   
   | DAX | Result |
   |----------|----------|
@@ -92,6 +97,10 @@ The data structure consists of **Primary Data** as the main fact table that reco
   |----------|----------|
   | ![](shipment_tracking_concept/dax_Viz.svg) | ![](shipment_tracking_concept/viz_result.png) |
 
+  -  Final Result
+
+  ![](shipment_tracking_concept/result_shipment_tracking.png)
+
 - For dynamic analysis, **TopN Par** is used, a parameter table that allows users to select the highest number of Total Shipments in the shipment analysis. These parameters help filter the data according to the user's needs.
 
   - Example of application for visualization of Material Shipment and Supplier Name
@@ -100,49 +109,111 @@ The data structure consists of **Primary Data** as the main fact table that reco
   |----------|----------|
   | ![](parameter/parameter_dax.svg) | ![](parameter/parameter_result.png) |
 
-  -  Final Result
-
-  ![](shipment_tracking_concept/result_shipment_tracking.png)
-
 - The **no direct relationship between tables** approach utilizes **DAX Measures** for key metric calculation and dynamic filter creation to ensure accurate and flexible analysis.
 
 ![](data_modeling.png)
 
 ## 7. Analysis & Visualization
-The dashboard consists of **three pages**, each focusing on different insights:
+The analysis was conducted entirely in Power BI, leveraging its visualization tools to create the following:  
 
-1. **Performance Overview**
-   - Shipment trends by month.
-   - KPI metrics: Total Shipments, Delay Percentage, and Punctuality Rate.
-   - Supplier performance comparison.
+- **Shipment Delay Trends**: Line charts to track monthly shipment delays and identify seasonal patterns.  
+- **Supplier Performance**: Bar charts to compare shipment volume and delay rates across different suppliers.  
+- **Route Efficiency**: Analyzing common shipment routes and highlighting those with the longest delivery times.  
+- **Customer Shipment Insights**: Identifying customers with the highest shipment volumes and delay impact.  
+- **Delay Factors Analysis**: Evaluating key contributors to shipment delays, such as distance categories and GPS tracking issues.  
+- **Peak Shipment Periods**: Highlighting the busiest booking and delivery times using clustered bar charts.  
 
-2. **Shipment Delays Analysis**
-   - Delay trends over time.
-   - Distribution of delay days.
-   - Delay breakdown by shipment category and supplier.
+In this Dashboard there are 3 pages :
 
-3. **Route & GPS Analysis**
-   - Top delayed routes and average distance.
-   - Shipment distribution map.
-   - Impact of GPS providers on shipment delays.
+- Shipment Tracking
+- Performance
+- Shipment Delay 
 
-## 8. Conclusion
-- **Peak Shipment Delays**: Delays are highest for Far Distance and Short Distance categories.
-- **Supplier Performance**: Certain suppliers like `Ekta Transport Company` and `Trans Cargo India` have significantly higher delays.
-- **Material Delay Trends**: `Yoke & Pole Assy` has the longest average delay of 30 days.
-- **Operational Inefficiencies**: GPS Consent Track accounts for 73.4% of delayed shipments.
-- **Punctuality Challenges**: The overall punctuality rate is **only 41%**, indicating significant room for improvement.
+You can interact with report here [FP 20 Analytics Challenge]()
 
-## Actionable Recommendations
-✅ **Improve Supplier Accountability**: Set stricter SLAs for suppliers with repeated delays.
-✅ **Optimize High-Delay Routes**: Identify bottlenecks and improve route planning.
-✅ **Enhance GPS Tracking**: Reduce dependency on GPS Consent Track.
-✅ **Refine Booking & Dispatching Processes**: Reduce the gap between booking and trip start times.
-✅ **Enhance Real-Time Monitoring**: Implement alerts for high-risk shipments.
+![](dashboard.png) 
+
+### Insights  
+### 🚚 Shipment Performance Trends  
+- June to August 2020 showed above-average shipment performance, peaking in August 2020 with 1.4K shipments.  
+- Weekdays (Monday–Friday) recorded the highest shipment volumes, particularly between 09:00 – 19:00.  
+
+### ⏳ Shipment Delay Analysis  
+- 58.8% of total shipments experienced delays, compared to on-time or early deliveries.  
+- Total delayed shipments reached 2.2K, with an average delay of 12 days per shipment.  
+- Shipment categories with the highest delays:  
+  - **Far Distance & Short Distance** both exceeded 600 delayed shipments, covering an average distance of 1K – 2K KM.  
+  - **GPS Consent Track** usage was a major delay factor, contributing to 73.4% of total delays.  
+
+### 🏭 Material & Supplier Analysis  
+- **Auto Parts** had the highest shipment volume, reaching 1.2K shipments, significantly higher than other materials.  
+- Materials with the highest average delays:  
+  - **Yoke & Pole Assy**, with an average delay of 30 days per shipment.  
+- Suppliers with the highest shipments:  
+  - **Ekta Transport Company** (238 shipments) and **Trans Cargo India** (198 shipments).  
+- Suppliers with the highest average delays:  
+  - **Ekta Transport Company** and **Trans Cargo India**, both averaging 12 days of delay per shipment.  
+
+### 🏢 Customer & Shipment Distribution Analysis  
+- Several key customers experienced significant shipment delays, including:  
+  - **Larsen & Toubro Limited**  
+  - **Ford India Private Limited**  
+  - **Ericsson India Private Limited**  
+- The **Shipment Distribution Map** indicated high shipment volumes in Southern and Western India.  
+
+---
+
+## 8. Conclusion  
+### 🚛 Top Routes & Route Optimization  
+- Major shipment routes had high traffic from June to August, peaking in August 2020 with 1.4K shipments.  
+- The highest shipment volumes occurred in **Southern & Western India**, requiring route optimization for better efficiency.  
+- **Far Distance & Short Distance routes** had the most delays, exceeding 600 delayed shipments with distances of 1K – 2K KM.  
+
+### ⏰ Delivery Times & Delays Analysis  
+- **58.8% of shipments were delayed**, with an average delay of 12 days per shipment.  
+- **GPS Consent Track issues** contributed to 73.4% of total shipment delays, requiring an evaluation of tracking systems and logistics coordination.  
+
+### 📦 Peak Shipments & Supplier Trends  
+- **Monday–Friday** was the peak shipping period, particularly between **09:00 – 19:00**.  
+- **Ekta Transport Company & Trans Cargo India** were the top suppliers, but they also had high delay rates (12 days on average).  
+- **Punctuality Rate stood at only 41%**, indicating a large number of late shipments.  
+
+### 🤝 Customer Insights & Bottlenecks  
+- Key customers such as **Larsen & Toubro Limited, Ford India Private Limited, and Ericsson India Private Limited** suffered major shipment delays.  
+- **Yoke & Pole Assy** had the highest average delay per material, reaching **30 days per shipment**.  
+
+---
+
+## 9. Recommendations  
+✅ **1. Optimize Shipping Routes (Route Optimization & Top Routes)**  
+- Identify **alternative routes** for shipments with high delays, especially in **Southern & Western India**.  
+- Implement **dynamic routing strategies** to avoid congestion during peak hours (09:00 – 19:00).  
+
+✅ **2. Reduce Delivery Delays (Delivery Time & Delays Reduction)**  
+- Evaluate **GPS Consent Track usage** and conduct an audit to understand tracking-related delays.  
+- Optimize **warehouse operations and last-mile delivery** to reduce the current 12-day delay per shipment.  
+- Implement **stricter SLA (Service Level Agreement) policies** with suppliers to ensure better performance.  
+
+✅ **3. Improve Supplier Efficiency (Supplier Performance Improvement)**  
+- Review contracts with **high-delay suppliers**, particularly **Ekta Transport Company & Trans Cargo India**.  
+- Introduce **real-time supplier performance tracking** to monitor and address shipment delays.  
+
+✅ **4. Reduce Key Customer Delays (Customer Satisfaction & Bottlenecks Improvement)**  
+- Strengthen coordination with **Larsen & Toubro Limited, Ford India Private Limited, and Ericsson India Private Limited** to manage shipment expectations.  
+- Focus on **improving efficiency for high-delay materials**, especially **Yoke & Pole Assy** with an average delay of 30 days.  
+
+✅ **5. Increase Punctuality Rate & Prevent Bottlenecks**  
+- Target an **increase in punctuality rate from 41% to at least 70%** by improving logistics coordination and supplier performance.  
+- Identify **congestion points and warehouse bottlenecks**, then optimize distribution processes to prevent shipment stagnation.  
+- Implement **buffer stock or regional hub systems** to mitigate the impact of delays on key customers.  
+
 
 This analysis provides valuable insights into shipment performance, supplier trends, and delay factors, enabling stakeholders to make data-driven decisions to improve logistics operations.
 
 ---
 
-📌 **Author:** [Your Name]  
-📆 **Date:** March 2025
+### Repository Contents  
+- **Power BI Dashboard File**: The main [PBIX File]() containing the analysis and visualizations. 
+- **Data Sources**: [Raw Dataset]() used in the project.  
+- **Screenshots/Reports**: Exported visualizations for sharing insights.  
+- **README.md**: Project documentation (this file).
