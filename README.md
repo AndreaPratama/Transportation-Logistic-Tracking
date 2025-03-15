@@ -20,7 +20,9 @@ The logistics industry faces challenges such as shipment delays, inefficient rou
 - **Data Analysis & Visualization**: Power BI for interactive dashboards.
 - **DAX (Data Analysis Expressions)**: Advanced calculations for KPIs and Visualizations.
 - **Data Transformation**: Cleaning and structuring raw data.
-- **UI/UX** : 
+- **Dashboard Design & User Experience**: Created an intuitive and visually appealing dashboard in Power BI, ensuring a seamless user experience with clear navigation and logical data flow.  
+- **Interactive Visualizations**: Implemented **filters, drill-throughs, and tooltips** to enhance user interaction, enabling deeper insights into shipment performance and logistics bottlenecks.  
+- **Color Coding & Data Storytelling**: Applied **color schemes and conditional formatting** to highlight key metrics, such as delays, supplier efficiency, and shipment trends.
 - **Statistical Analysis**: Understanding delay patterns and trends.
 - **Business Intelligence**: Translating data into actionable insights.
 
