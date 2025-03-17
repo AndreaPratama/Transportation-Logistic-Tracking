@@ -131,7 +131,7 @@ In this Dashboard there are 3 pages :
 - Performance
 - Shipment Delay 
 
-You can interact with report here [FP 20 Analytics Challenge]()
+You can interact with report here [FP 20 Analytics Challenge](https://app.powerbi.com/view?r=eyJrIjoiYjE4NTc4NWItYzg2Ni00YzcxLThhNWMtNjJlY2QxODdkZTQ4IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9)
 
 ![](dashboard.png) 
 
