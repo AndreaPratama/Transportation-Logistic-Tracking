@@ -131,7 +131,7 @@ In this Dashboard there are 3 pages :
 - Performance
 - Shipment Delay 
 
-You can interact with report here [FP 20 Analytics Challenge](https://app.powerbi.com/view?r=eyJrIjoiYjE4NTc4NWItYzg2Ni00YzcxLThhNWMtNjJlY2QxODdkZTQ4IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9)
+You can interact with report here [FP 20 Analytics Challenge](https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/submission/b1ae676ffd9ff32085836a5ed52bbbf6?challenge=fp20-analytics-february-2025)
 
 ![](dashboard.png) 
 
@@ -215,7 +215,7 @@ This analysis provides valuable insights into shipment performance, supplier tre
 ---
 
 ### Repository Contents  
-- **Power BI Dashboard File**: The main [PBIX File]() containing the analysis and visualizations. 
+- **Power BI Dashboard File**: The main [PBIX File](https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/submission/b1ae676ffd9ff32085836a5ed52bbbf6?challenge=fp20-analytics-february-2025) containing the analysis and visualizations. 
 - **Data Sources**: [Raw Dataset](Transportation&Logistics_Tracking_Dataset.xlsx) used in the project.  
 - **Screenshots/Reports**: Exported visualizations for sharing insights.  
 - **README.md**: Project documentation (this file).
