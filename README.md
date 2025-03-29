@@ -214,6 +214,13 @@ This analysis provides valuable insights into shipment performance, supplier tre
 
 ---
 
+## Achievements
+- 🥇 **Winner** in the FP20 Analytics February Challenge.
+
+![](winner.jpg)
+
+Winner Announcement [Zoomchart](https://www.linkedin.com/posts/zoomcharts_logistics-datachallenge-builtwithzoomcharts-activity-7310341010637688834-Qgwl?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfDJ8oB6xYHtJXI_9yHSWr1swBsv10DHX0) 
+
 ### Repository Contents  
 - **Power BI Dashboard File**: The main [PBIX File](https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/submission/b1ae676ffd9ff32085836a5ed52bbbf6?challenge=fp20-analytics-february-2025) containing the analysis and visualizations. 
 - **Data Sources**: [Raw Dataset](Transportation&Logistics_Tracking_Dataset.xlsx) used in the project.  
